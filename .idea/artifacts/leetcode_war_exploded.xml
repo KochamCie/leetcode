@@ -1,14 +1,32 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="leetcode:war exploded">
-    <output-path>$PROJECT_DIR$/target/leetcode</output-path>
+    <output-path>$PROJECT_DIR$/target/leetcode-1.0-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="leetcode" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: ru.yandex.qatools.allure:allure-testng-adaptor:1.4.16" />
+          <element id="library" level="project" name="Maven: org.testng:testng:6.8" />
+          <element id="library" level="project" name="Maven: org.beanshell:bsh:2.0b4" />
+          <element id="library" level="project" name="Maven: com.beust:jcommander:1.27" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.6" />
+          <element id="library" level="project" name="Maven: ru.yandex.qatools.allure:allure-java-aspects:1.4.16" />
+          <element id="library" level="project" name="Maven: ru.yandex.qatools.allure:allure-java-adaptor-api:1.4.16" />
+          <element id="library" level="project" name="Maven: ru.yandex.qatools.allure:allure-java-annotations:1.4.16" />
+          <element id="library" level="project" name="Maven: ru.yandex.qatools.allure:allure-model:1.4.16" />
+          <element id="library" level="project" name="Maven: org.jvnet.jaxb2_commons:jaxb2-basics-runtime:0.9.3" />
+          <element id="library" level="project" name="Maven: ru.yandex.qatools.properties:properties-loader:1.5" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils-core:1.8.3" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
+          <element id="library" level="project" name="Maven: org.apache.tika:tika-core:1.7" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.3" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/leetcode/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/leetcode-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="leetcode/web/Web" />
     </root>
