@@ -166,6 +166,11 @@ public class BinaryTree {
     }
 
 
+    /**
+     * 二叉树的深度
+     *
+     * @param args
+     */
     public static void main(String [] args){
         BinaryTree tree = new BinaryTree();
         System.out.println(tree.add(5));
@@ -181,5 +186,16 @@ public class BinaryTree {
         System.out.println();
         System.out.println(tree.findMax().value);
         System.out.println(tree.findMin().value);
+        System.out.println(deep(tree.root));
+    }
+
+    public static int deep(Node root){
+        if(null == root){
+            return 0;
+        }
+        int left = 0, right = 0;
+        left = deep(root.left);
+        right = deep(root.right);
+        return Math.max(left, right)+1;
     }
 }

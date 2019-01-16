@@ -1,5 +1,7 @@
 package com.hama.common.linkedlist;
 
+import lombok.val;
+
 /**
  * @Author: rns
  * @Date: 2018/12/13 下午9:37
@@ -204,15 +206,37 @@ public class SinglyLinkedList {
     }
 
     public static void main(String[] args) throws Exception {
-        SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
-        singlyLinkedList.addFirst( 111);
-        singlyLinkedList.addFirst( 222);
-        singlyLinkedList.addFirst( 333);
-        singlyLinkedList.display();
+        
+        
+        System.out.println(3&1);
+        
+        SinglyLinkedList linkedList1 = new SinglyLinkedList();
+        linkedList1.addFirst( 5);
+        linkedList1.addFirst( 4);
+        linkedList1.addFirst( 2);
+
+        SinglyLinkedList linkedList2 = new SinglyLinkedList();
+        linkedList2.addFirst( 2);
+        linkedList2.addFirst( 6);
+        linkedList2.addFirst( 5);
         System.out.println();
-        System.out.println(singlyLinkedList.get(0));
-        System.out.println(singlyLinkedList.remove(0));
-        singlyLinkedList.display();
-        System.out.println(singlyLinkedList.get(0));
+
+        Node l1 = linkedList1.head;
+        Node l2 = linkedList2.head;
+        int temp = 0;
+        while(null != l1){
+
+            int add = l1.value + l2.value + temp;
+            
+            l1.value = add/10;
+            temp = add % 10;
+            l2 = l2.next;
+            l1 = l1.next;
+        }
+        System.out.println(null == l1);
+        
+        while (null != l1){
+            System.out.println(l1.getValue());
+        }
     }
 }
