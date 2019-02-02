@@ -3,7 +3,7 @@ package com.hama.leetcode;
 /**
  * @Author: rns
  * @Date: 2019/2/2 下午4:45
- * @Description: _66_Plus_One
+ * @Description: _066_Plus_One
  * Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
  *
  * The digits are stored such that the most significant digit is at the head of the list, and each element in the array contain a single digit.
@@ -21,7 +21,7 @@ package com.hama.leetcode;
  * Output: [4,3,2,2]
  * Explanation: The array represents the integer 4321.
  */
-public class _66_Plus_One {
+public class _066_Plus_One {
 
     public int[] plusOne(int[] digits) {
 
