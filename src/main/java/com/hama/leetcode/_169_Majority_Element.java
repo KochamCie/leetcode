@@ -30,7 +30,6 @@ public class _169_Majority_Element {
         int times = nums.length / 2;
         for (int num : nums) {
             int value = count.containsKey(num) ? count.get(num) : 0;
-            System.out.println(num + "===" + value);
             if (times == value) {
                 return num;
             }
