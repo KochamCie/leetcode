@@ -1,0 +1,36 @@
+package com.hama.leetcode;
+
+/**
+ * @Author: rns
+ * @Date: 2019/2/14 下午5:07
+ * @Description: _181_Employees_Earning_More_Than_Their_Managers
+ * The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
+ *
+ * +----+-------+--------+-----------+
+ * | Id | Name  | Salary | ManagerId |
+ * +----+-------+--------+-----------+
+ * | 1  | Joe   | 70000  | 3         |
+ * | 2  | Henry | 80000  | 4         |
+ * | 3  | Sam   | 60000  | NULL      |
+ * | 4  | Max   | 90000  | NULL      |
+ * +----+-------+--------+-----------+
+ * Given the Employee table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.
+ *
+ * +----------+
+ * | Employee |
+ * +----------+
+ * | Joe      |
+ * +----------+
+ */
+public class _181_Employees_Earning_More_Than_Their_Managers {
+
+    /**
+     * # Write your MySQL query statement below
+     *
+     * select
+     *     e1.Name as 'Employee'
+     * from Employee e1, Employee e2
+     * where  e2.Id = e1.ManagerId
+     * and e1.Salary>e2.Salary;
+     */
+}
